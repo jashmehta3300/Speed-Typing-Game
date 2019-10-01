@@ -8,6 +8,7 @@
 - JavaScript
 
 ### How to play?
+- Run index.html file in a browser
 - Enter the displayed word. 
 - If the word is typed correctly within the given time period, score increases and another word gets displayed.
 - Keep typing the displayed word until you run out of time.
