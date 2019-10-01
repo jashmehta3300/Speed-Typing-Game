@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TypeRacer</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .body123, .text-center
+    {
+      background-color: black;
+    }
+
+    .heading123
+    {
+      color: white;
+    }
+
+    .heading_main
+    {
+      color:blueviolet;
+    }
+  </style>
+
+
+</head>
+
+<body class="body123 text-white "><!--Dark Gray background with white text-->
+  <header class=" text-center p-3 mb-5"><!--Light gray; padding: 3rem; Margin-Bottom: 5rem-->
+    <h1 class="heading123">TypeRacer</h1>
+    <hr class="col-md-9 border border-white border-left-0 border-right-0 border-top-0">
+  </header>
+  <div class="container text-center">
+
+    <!-- Word & Input -->
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <p class="heading123 lead mb-2"><!--makes the para stand out-->
+          Type The Given Word Within
+          <span class="text-danger font-weight-bolder h3" id="seconds">
+          5
+          </span>
+           Seconds:
+        </p>
+        <h2 class="display-1 heading_main mb-5" id="current-word">hello</h2>
+        <input type="text" class="form-control  form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
+        <h4 class="mt-3" id="message"></h4>
+
+
+        
+        <!-- Time & Score Columns -->
+        <div class="heading123 row mt-4">
+            <div class="col-md-6">
+              <h3>Time Left:
+                <span id="time">0</span>
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h3>Score:
+                <span id="score">0</span>
+              </h3>
+            </div>
+        </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
